@@ -15,12 +15,12 @@ public class Main {
             // Display Menu to console
             System.out.println("");
             System.out.println("##################################");
-            System.out.println("#      Student Application v0.9  #");
+            System.out.println("#      Watch Manager v0.9  #");
             System.out.println("##################################");
-            System.out.println("(1) Add a Student.");
-            System.out.println("(2) Delete a Student.");
-            System.out.println("(3) Show total Number of Students.");
-            System.out.println("(4) Search for a Student by ID.");
+            System.out.println("(1) Add a Watch.");
+            System.out.println("(2) Delete a Watch.");
+            System.out.println("(3) Show total Number of Watch.");
+            System.out.println("(4) Search for a Watch by ID.");
             System.out.println("(5) Quit.");
             System.out.println("Select an option from 1 to 5 and press Enter>");
 
@@ -29,7 +29,7 @@ public class Main {
 
             if (userSelection == 5) { // Quit
 
-                System.out.println("Student Application Closing - Goodbye!");
+                System.out.println("Watch Application Closing - Goodbye!");
                 // Close the User Input Scanner
                 userInput.close();
                 break; // Break out of display Menu infinite loop
