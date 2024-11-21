@@ -5,14 +5,14 @@ public class Watch {
     // Instance Variables
     private int serialNumber; // Unique ID
     private String brand;
-    private float price;
+    private float priceEur;
     private boolean isSold;
 
     // Constructor
-    public Watch(int serialNumber, String brand, float price, boolean isSold){
+    public Watch(int serialNumber, String brand, float priceEur, boolean isSold){
         this.serialNumber = serialNumber;
         this.brand = brand;
-        this.price = price;
+        this.priceEur = priceEur;
         this.isSold = isSold;
     }
 
@@ -33,12 +33,12 @@ public class Watch {
         this.brand = brand;
     }
 
-    public float getPrice() {
-        return price;
+    public float getPriceEur() {
+        return priceEur;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
+    public void setPriceEur(float priceEur) {
+        this.priceEur = priceEur;
     }
 
     public boolean isSold() {
