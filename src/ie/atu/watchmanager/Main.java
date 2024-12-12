@@ -6,6 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Create WatchManager object
+        WatchManager watchManagerObject = new WatchManager();
+
         // Instantiate Scanner class so we can start reading user input
         Scanner userInput = new Scanner(System.in);
         int userSelection = 0; // Used to store user Menu option selection
@@ -26,6 +29,23 @@ public class Main {
 
             // Store user Menu option selection
             userSelection = userInput.nextInt();
+
+            // If user selects option 1
+            if (userSelection == 1) {
+                // Ask user to enter Watch details
+                System.out.println("Enter Watch Serial Number:");
+                int serialNumber = userInput.nextInt();
+                System.out.println("Enter Watch Brand:");
+                String brand = userInput.next();
+                System.out.println("Enter Watch Price:");
+                float price = userInput.nextFloat();
+                System.out.println("Is Watch Sold? (true/false):");
+                boolean isSold = userInput.nextBoolean();
+
+                // Create Watch object
+                Watch myWatch = new Watch(serialNumber, brand, price, isSold);
+                watchManagerObject.addWatch(myWatch);
+            } // end if
 
             if (userSelection == 5) { // Quit
 
