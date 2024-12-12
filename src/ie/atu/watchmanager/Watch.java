@@ -9,7 +9,7 @@ public class Watch {
     private boolean isSold;
 
     // Constructor
-    public Watch(int serialNumber, String brand, float priceEur, boolean isSold){
+    public Watch(int serialNumber, String brand, float priceEur, boolean isSold) {
         this.serialNumber = serialNumber;
         this.brand = brand;
         this.priceEur = priceEur;
@@ -48,7 +48,5 @@ public class Watch {
     public void setSold(boolean isSold) {
         this.isSold = isSold;
     }
-
-    
 
 }
