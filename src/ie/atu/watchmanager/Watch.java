@@ -1,6 +1,6 @@
 package ie.atu.watchmanager;
 
-public class Watch {
+public class Watch extends Clock {
 
     // Instance Variables
     private int serialNumber; // Unique ID
@@ -47,6 +47,12 @@ public class Watch {
 
     public void setSold(boolean isSold) {
         this.isSold = isSold;
+    }
+
+    // Overridden method from Clock interface
+    @Override
+    public String showTime() {
+        return "12:00";
     }
 
 }
