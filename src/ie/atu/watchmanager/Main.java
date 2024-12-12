@@ -47,6 +47,12 @@ public class Main {
                 watchManagerObject.addWatch(myWatch);
             } // end if
 
+            // If user selects option 3
+            if (userSelection == 3) {
+                // Display total number of Watch objects
+                System.out.println("Total Number of Watches: " + watchManagerObject.totalWatches());
+            }
+
             if (userSelection == 5) { // Quit
 
                 System.out.println("Watch Application Closing - Goodbye!");

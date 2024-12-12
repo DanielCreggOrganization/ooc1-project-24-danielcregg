@@ -25,4 +25,20 @@ public class WatchManager {
         }
     }
 
+    // Method to find the total number of Watch objects in the array
+    public int totalWatches() {
+        // Initialize counter
+        int total = 0;
+        // Loop through array
+        for (int i = 0; i < watches.length; i++) {
+            // Check if slot is not empty
+            if (watches[i] != null) {
+                // Increment counter
+                total++;
+            }
+        }
+        // Return total number of Watch objects
+        return total;
+    }
+
 }
